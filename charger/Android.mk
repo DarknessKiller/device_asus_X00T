@@ -1,9 +1,11 @@
+LOCAL_PATH:= $(call my-dir)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE             := asus_charger
 LOCAL_MODULE_OWNER       := asus
 LOCAL_MODULE_PATH        := $(TARGET_ROOT_OUT_SBIN)
 LOCAL_UNSTRIPPED_PATH    := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
-LOCAL_SRC_FILES          := charger/asus_charger
+LOCAL_SRC_FILES          := asus_charger
 LOCAL_MODULE_TAGS        := optional
 LOCAL_MODULE_CLASS       := EXECUTABLES
 include $(BUILD_PREBUILT)
@@ -22,7 +24,7 @@ include $$(BUILD_PREBUILT)
 endef
 
 _img_modules :=
-IMAGES_DIR := charger/res/images/charger
+IMAGES_DIR := res/images/charger
 _images :=
 $(foreach _img, $(call find-subdir-subdir-files, "$(IMAGES_DIR)", "*.png"), \
   $(eval $(call _add-charger-image,$(_img))))
