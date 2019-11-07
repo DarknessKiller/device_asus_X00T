@@ -158,7 +158,7 @@ ro.vendor.qti.config.zram=true
 persist.chg.max_volt_mv=9000
 
 # Lcd density
-ro.sf.lcd_density=480
+ro.sf.lcd_density=420
 
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=1
