@@ -56,6 +56,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "sdm660_64-user 9 PKQ1 1285 release-keys");
+    property_override("ro.build.description", "s2-user 6.0.1 IIXOSOP5801910121S 44 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "LeEco/ZL1_NA/le_zl1:6.0.1/WEXNAOP5802101261S/letv01261206:user/release-keys");
 }
