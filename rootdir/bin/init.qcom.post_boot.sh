@@ -374,7 +374,7 @@ else
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
 			if [ $MemTotal -gt 2097152 ]; then
 		    # Huaqin add for ZQL1820-699 by shengzhong at 2018/09/19 start
-		    echo "25600,34560,38400,52224,71680,84480" > /sys/module/lowmemorykiller/parameters/minfree
+		    echo "1536,2048,4096,5120,10240,15000" > /sys/module/lowmemorykiller/parameters/minfree
 		    # Huaqin add for ZQL1820-699 by shengzhong at 2018/09/19 end
 			fi
         else
